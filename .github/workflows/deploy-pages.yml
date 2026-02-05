@@ -34,13 +34,13 @@ jobs:
         run: corepack prepare pnpm@10.4.1 --activate
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: corepack pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build:gh-pages
+        run: corepack pnpm build:gh-pages
 
       - name: Create 404 fallback
-        run: pnpm copy-404
+        run: corepack pnpm copy-404
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
