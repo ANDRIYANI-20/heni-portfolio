@@ -39,6 +39,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# NPM lockfile (pnpm is used)
+package-lock.json
+
 # Runtime data
 pids
 *.pid
@@ -104,3 +107,5 @@ temp/
 *.db
 *.sqlite
 *.sqlite3
+
+.vercel
